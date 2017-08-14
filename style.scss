@@ -9,7 +9,7 @@ html {
 
 body {
 	margin: 0px;
-	background: $white;
+	background: $mid_aubergine;
 	font-size: 18px;
 	font-family: $monospace;
 }
@@ -20,6 +20,7 @@ body {
 
 .header {
 	border-bottom: 1px solid $black;
+	font-family: $sans;
 }
 
 .title-bar {
@@ -28,7 +29,6 @@ body {
 	background: $cool_grey;
 	background: linear-gradient(to bottom, #444444, $cool_grey);
 	color: $white;
-	text-align: right;
 	a {
 		color: $white;
 		text-decoration: none;
@@ -36,6 +36,7 @@ body {
 }
 
 .title-text {
+	margin-left: 20px;
 }
 
 .search-box {
@@ -72,5 +73,26 @@ body {
 	}
 	a:hover {
 		background-color: $ubuntu_orange;
+	}
+}
+
+.container#main {
+	background: $white;
+	padding: 10px;
+}
+
+.wrapper-footer {
+	float: bottom;
+}
+
+.footer {
+	background: $warm_grey_30;
+	padding: 2px;
+	padding-left: 10px;
+	border-top: 1px solid $black;
+	border-bottom: 3px solid $cool_grey;
+	font-family: $sans;
+	p {
+		margin: 0px;
 	}
 }
