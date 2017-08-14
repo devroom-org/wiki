@@ -9,13 +9,17 @@
 	<div class="wrapper-header">
 		<div class="container">
 			<header class="header">
-				<nav class="navigation">
-					<a href="{{ site.baseurl }}">{{ site.name }}</a>
+				<nav class="title-bar">
+					<a class="title-text" href="{{ site.baseurl }}">{{ site.name }}</a>
+					<form class="search-box" method="GET" action="/search/">
+						<input class="text-input" type="text" name="query">
+						<input class="search-button" type="submit" value="Search">
+					</form>
 				</nav>
-				<form class="search-box" method="GET" action="/search/" style="text-align: center; margin-top: 20px; margin-left: 20px;">
-					<input type="text" name="query">
-					<input type="submit" value="Search">
-				</form>
+				<nav class="navigation">
+					<a class="nav-item" href="{{ site.baseurl }}">홈</a>
+					<a class="nav-item last" href="https://github.com/Gaesuda-Chat-Room/wiki/">GitHub</a>
+				</nav>
 			</header>
 		</div>
 	</div>
