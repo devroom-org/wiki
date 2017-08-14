@@ -102,6 +102,11 @@ a {
 	text-decoration: none;
 }
 
+blockquote {
+	font-family: $serif;
+	font-style: italic;
+}
+
 h1 {
 	font-size: 30px;
 	color: $header;
