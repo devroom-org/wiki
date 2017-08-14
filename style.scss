@@ -1,0 +1,148 @@
+---
+---
+
+@import "variables";
+
+{% include d2coding.css %}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 0px;
+	background: $mid_aubergine;
+	font-size: 16px;
+	font-family: $monospace;
+}
+
+.wrapper-header {
+	
+}
+
+.header {
+	border-bottom: 1px solid $black;
+	font-family: $sans;
+}
+
+.title-bar {
+	padding: 5px;
+	padding-bottom: 7px;
+	background: $cool_grey;
+	background: linear-gradient(to bottom, #444444, $cool_grey);
+	color: $white;
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+.title-text {
+	margin-left: 20px;
+}
+
+.search-box {
+	float: left;
+	height: 26px;
+	padding: 0px 2px;
+	border-radius: 10px;
+	background-color: $cool_grey;
+	.text-input {
+		height: 20px;
+		border: 0px;
+		border-radius: 10px;
+		background-color: $warm_grey;
+		box-sizing: border-box;
+		padding: 0px;
+	}
+	.search-button {
+		height: 20px;
+		border: 0px;
+		border-radius: 10px;
+		background-color: $warm_grey;
+		padding: 0px 5px;
+	}
+}
+
+.navigation {
+	background-color: $warm_grey_30;
+	padding: 2px;
+	padding-left: 10px;
+	a {
+		padding: 2px;
+		color: $black;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: $ubuntu_orange;
+	}
+}
+
+.container#main {
+	background: $white;
+	padding: 10px;
+}
+
+.wrapper-footer {
+	float: bottom;
+}
+
+.footer {
+	background: $warm_grey_30;
+	padding: 2px;
+	padding-left: 10px;
+	border-top: 1px solid $black;
+	border-bottom: 3px solid $cool_grey;
+	font-family: $sans;
+	p {
+		margin: 0px;
+	}
+}
+
+a {
+	color: $link;
+	text-decoration: none;
+}
+
+strong {
+	color: $bold;
+}
+
+em {
+	color: $italic;
+}
+
+blockquote {
+	font-family: $serif;
+	font-style: italic;
+}
+
+hr {
+	border-color: $warm_grey;
+	border-width: 0.5px;
+}
+
+h1.page-title {
+	font-size: 30px;
+	color: $black;
+}
+
+h1 {
+	color: $header;
+}
+
+h2 {
+	color: $header;
+}
+
+h3 {
+	color: $header;
+}
+
+h4 {
+	color: $header;
+}
+
+h5 {
+	color: $header;
+}

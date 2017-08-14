@@ -1,1 +1,39 @@
-{{ content }}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
+    {% include meta.html %}
+</head>
+<body>
+	<div class="wrapper-header">
+		<div class="container">
+			<header class="header">
+				<nav class="title-bar">
+					<a class="title-text" href="{{ site.baseurl }}">{{ site.name }}</a>
+					<form class="search-box" method="GET" action="/search/">
+						<input class="text-input" type="text" name="query">
+						<input class="search-button" type="submit" value="Search">
+					</form>
+				</nav>
+				<nav class="navigation">
+					<a class="nav-item" href="{{ site.baseurl }}">홈</a>
+					<a class="nav-item last" href="{{ site.repo }}">GitHub</a>
+				</nav>
+			</header>
+		</div>
+	</div>
+	
+	<div class="container" id="main">
+		{{ content }}
+	</div>
+	
+	<div class="wrapper-footer">
+		<div class="container">
+			<footer class="footer">
+				<p>{{ site.footer_message }}</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
