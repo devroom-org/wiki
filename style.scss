@@ -120,9 +120,13 @@ hr {
 	border-width: 0.5px;
 }
 
-h1 {
+h1.page-title {
 	font-size: 30px;
 	color: $black;
+}
+
+h1 {
+	color: $header;
 }
 
 h2 {
