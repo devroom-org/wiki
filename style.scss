@@ -107,6 +107,11 @@ blockquote {
 	font-style: italic;
 }
 
+hr {
+	border-color: $warm_grey;
+	border-width: 0.5px;
+}
+
 h1 {
 	font-size: 30px;
 	color: $header;
