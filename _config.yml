@@ -25,6 +25,8 @@ baseurl: "/wiki" # the subpath of your site, e.g. /blog
 url: "gaesuda-chat-room.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Gaesuda-Chat-Room
 
+repo: "https://github.com/Gaesuda-Chat-Room/wiki/"
+
 # Build settings
 markdown: kramdown
 theme: minima
