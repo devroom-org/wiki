@@ -34,9 +34,8 @@ var getParam = function(param) {
 
 var onSearchLoad = function() {
 	var filters = [];
-	var query = getParam('query');
-	var ors = query.split(" ");
-	filters = ors;
+	var query = getParam('query')
+  filters.push(query);
 	
 	getText('{{ site.baseurl }}/search.json', function(data) {
 		data = JSON.parse(data);
@@ -85,7 +84,8 @@ var filterPages = function(pages, filters) {
 		for(var i in filters) {
       var filter = filters[i];
       if(page.title.includes(filter) || page.permalink.includes(filter)) {
-        result.push(page);
+        if(page.title == filter) location.replace('{{ site.baseurl }}/' + page.permalink);
+        if(!result.includes(page)) result.push(page);
       }
     }
 	}
