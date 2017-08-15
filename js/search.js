@@ -89,6 +89,17 @@ var filterPages = function(pages, filters) {
       }
     }
 	}
+  
+  result.sort(function(a, b) {
+    var A = new LCS(filters[0], a.title);
+    var B = new LCS(filters[0], b.title);
+    const title = B.getLength() - A.getLength();
+    A = new LCS(filters[0], a.permalink);
+    B = new LCS(filters[0], b.permalink);
+    const permalink = B.getLength() - A.getLength();
+    if(Math.abs(permalink) >= Math.abs(title)) return permalink;
+    else return title;
+  });
 	
 	return result;
 }
