@@ -27,37 +27,44 @@ body {
 
 .title-bar {
 	display: flex;
-	flex-wrap: wrap;
+	overflow:hidden;
 	padding: 5px;
 	padding-bottom: 7px;
 	background: $cool_grey;
 	background: linear-gradient(to bottom, #444444, $cool_grey);
 	color: $white;
-	a {
-		color: $white;
-		text-decoration: none;
-	}
 }
 
 .title-text {
+	flex-shrink: 0;
+	color: $white;
+	text-decoration: none;
 	margin-left: 20px;
 }
 
 .search-box {
+	display: flex;
 	height: 26px;
-	padding: 0px 2px;
 	border-radius: 10px;
 	background-color: $cool_grey;
 	.text-input {
+		width: 40px;
 		height: 20px;
+		margin: 2px;
 		border: 0px;
 		border-radius: 10px;
 		background-color: $warm_grey;
 		box-sizing: border-box;
-		padding: 0px;
+		padding: 0px 5px;
+		transition: width 0.5s;
+	}
+	.text-input:focus {
+		width: 240px;
 	}
 	.search-button {
+		width: 40px;
 		height: 20px;
+		margin: 2px;
 		border: 0px;
 		border-radius: 10px;
 		background-color: $warm_grey;
