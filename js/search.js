@@ -67,7 +67,7 @@ var layoutResultsPage = function(query, pages) {
 		var page = pages[i];
 		var li = document.createElement("li");
 		li.innerHTML = ""
-		+ '<a href="{{ site.baseurl }}/' + page.permalink + '">'
+		+ '<a href="{{ site.baseurl }}' + page.permalink + '">'
 		+ page.title
 		+ '</a>'
 		+ ' ({{ site.baseurl }}' + page.permalink + ')';
@@ -84,7 +84,7 @@ var filterPages = function(pages, filters) {
 		for(var i in filters) {
       var filter = filters[i];
       if(page.title.includes(filter) || page.permalink.includes(filter)) {
-        if(page.title == filter) location.replace('{{ site.baseurl }}/' + page.permalink);
+        if(page.title == filter) location.replace('{{ site.baseurl }}' + page.permalink);
         if(!result.includes(page)) result.push(page);
       }
     }
