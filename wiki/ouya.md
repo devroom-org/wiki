@@ -1,6 +1,6 @@
 ---
 layout: wiki
-permalink: /ouya
+permalink: /ouya/
 title: ㅗㅜㅑ
 ---
 
