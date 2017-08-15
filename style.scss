@@ -26,6 +26,8 @@ body {
 }
 
 .title-bar {
+	display: flex;
+	flex-wrap: wrap;
 	padding: 5px;
 	padding-bottom: 7px;
 	background: $cool_grey;
@@ -42,7 +44,6 @@ body {
 }
 
 .search-box {
-	float: left;
 	height: 26px;
 	padding: 0px 2px;
 	border-radius: 10px;
