@@ -1,8 +1,7 @@
 ---
 layout: wiki
-permalink: /개발자 수다방/
-title: 
-개발자 수다방
+permalink: /Developer's-talk-room/
+title: 개발자 수다방
 ---
 
 **개발자 수다방**(Developer's talk room, **devroom**)은 kmc7468이 운영하는 카카오톡 오픈 채팅방/텔레그램 슈퍼그룹방이다.
