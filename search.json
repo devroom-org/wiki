@@ -1,0 +1,8 @@
+---
+---
+[
+	{% for page in site.pages %}
+		{% if page.title %}{% include page.json %},{% endif %}
+	{% endfor %}
+	null
+]
